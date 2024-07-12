@@ -43,3 +43,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+"""
+Sample Usage 
+
+cd to models first*
+
+python main.py "C:/Users/Exiledz/Desktop/Project Dump/Song Detective Tests Files/EXILEDZ - Rain Dance Master01.mp3" --output_dir "C:/Users/Exiledz/Desktop/output"
+
+"""
