@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.text-custom-size {
+  font-size: 2rem;
+}
