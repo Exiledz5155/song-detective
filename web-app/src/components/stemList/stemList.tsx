@@ -1,6 +1,6 @@
 "use client";
 
-import { Stem } from "@/app/lib/definitions";
+import { Stem } from "@/lib/definitions";
 import React from "react";
 import StemItem from "../StemItem";
 import {

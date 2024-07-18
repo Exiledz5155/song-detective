@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import TopNavBar from "./ui/navbar";
-import StemList from "./ui/stemList";
-import { Stem } from "./lib/definitions";
+import TopNavBar from "../components/navbar";
+import StemList from "../components/stemList";
+import { Stem } from "../lib/definitions";
 
 const App = () => {
   const stems: Stem[] = [
