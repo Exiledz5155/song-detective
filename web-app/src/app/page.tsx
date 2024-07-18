@@ -12,14 +12,14 @@ const App = () => {
     { id: "5", name: "Voice Cover", songId: "fav song" },
   ];
   return (
-    <Box>
+    <div>
       <TopNavBar />
-      <div className="flex justify-center">
+      <div className="flex justify-center ">
         <div>
           <StemList stems={stems} />
         </div>
       </div>
-    </Box>
+    </div>
   );
 };
 

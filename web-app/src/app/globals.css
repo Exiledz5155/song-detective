@@ -36,3 +36,21 @@ body {
 .text-custom-size {
   font-size: 2rem;
 }
+
+.loading-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #276d3c 0%, #276d3c 25%, #276d3c 50%, #23703a 75%, #147c33 100%);
+
+  background-size: 200% 100%;
+  animation: loading-progress 3s infinite;
+  transition: width 0.1s ease-in-out;
+}
+
+@keyframes loading-progress {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
