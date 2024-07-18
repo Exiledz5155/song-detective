@@ -114,3 +114,6 @@ venv.bak/
 
 # Pyre type checker
 .pyre/
+
+/source-separation/separation_results/*
+/source-separation/wavs/*
