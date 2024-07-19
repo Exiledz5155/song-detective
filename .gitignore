@@ -114,3 +114,10 @@ venv.bak/
 
 # Pyre type checker
 .pyre/
+
+/source-separation/separation_results/*
+!/source-separation/separation_results/.gitkeep
+/source-separation/wavs/*
+!/source-separation/wavs/.gitkeep
+/source-separation/checkpoints/*
+!/source-separation/checkpoints/.gitkeep
