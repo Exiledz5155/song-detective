@@ -14,23 +14,18 @@ const StemItem: React.FC<Props> = ({ stemVal, active, paused, setPaused }) => {
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
-    let newProgress: number;
+    let newProgress: number = 0;
     if (active && !paused) {
       startTimeRef.current = Date.now() - elapsedTimeRef.current;
       interval = setInterval(() => {
         const timeDiff = Date.now() - startTimeRef.current;
         newProgress = Math.min((timeDiff / 4_000) * 100, 100);
         setProgress(newProgress);
-
-        if (newProgress >= 100) {
-          clearInterval(interval);
-          setPaused(true);
-          setProgress(0);
-          elapsedTimeRef.current = 0;
-          startTimeRef.current = 0;
-        }
       }, 100);
     } else if (active && paused) {
+      if (progress === 0) {
+        return;
+      }
       elapsedTimeRef.current = Date.now() - startTimeRef.current;
     } else if (!active) {
       setProgress(0);
@@ -39,7 +34,16 @@ const StemItem: React.FC<Props> = ({ stemVal, active, paused, setPaused }) => {
     }
 
     return () => clearInterval(interval);
-  }, [active, paused, setPaused]);
+  }, [active, paused]);
+
+  useEffect(() => {
+    if (progress >= 100) {
+      setProgress(0);
+      setPaused(true);
+      elapsedTimeRef.current = 0;
+      startTimeRef.current = 0;
+    }
+  }, [progress]);
 
   return (
     <div>

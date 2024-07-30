@@ -131,7 +131,7 @@ const AutoCompleteSearch = () => {
           )}
         </div>
         <button
-          className="bg-transparent text-white border border-gray-300 px-4 py-2 rounded ml-2 flex items-center"
+          className="bg-transparent text-green-200 border-2 border-green-300 px-4 py-2 rounded ml-2 flex items-center"
           style={{ height: "40px" }}
           type="submit"
         >

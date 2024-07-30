@@ -48,15 +48,13 @@ const StemList: React.FC = () => {
         {stems.map((stem, index) => (
           <div key={stem.stemId} className="mb-8">
             <div>
-              <div className="flex justify-start gap-4">
+              <div className="flex justify-start gap-2">
                 {stem.name}
-                <div>
-                  {index === activeIndex && isPlaying && (
-                    <div>
-                      <SpeakerWaveIcon className="h-4 text-gray-200" />
-                    </div>
-                  )}
-                </div>
+                {index === activeIndex && isPlaying && (
+                  <div className="flex flex-col justify-center">
+                    <SpeakerWaveIcon className="h-3 text-gray-200 align-middle" />
+                  </div>
+                )}
               </div>
             </div>
             <div>
@@ -73,7 +71,7 @@ const StemList: React.FC = () => {
           <div className="flex justify-center mb-4">
             <button
               onClick={handlePlay}
-              className="bg-green-400 text-white px-4 py-2 rounded"
+              className="bg-transparent text-gray-300 border-2 border-gray-400 px-4 py-2 rounded mr-2 flex items-center"
             >
               {!isPlaying ? (
                 <PlayIcon className="h-5" />
@@ -84,11 +82,11 @@ const StemList: React.FC = () => {
           </div>
           <div className="flex justify-center mb-4">
             <button
-              onClick={handleSkip}
-              className="bg-gray-500 text-white px-4 py-2 rounded mr-2"
+              className="bg-transparent text-yellow-300 border-2 border-yellow-400 px-4 py-2 rounded mr-2 flex items-center"
               style={{ height: "40px" }}
+              onClick={handleSkip}
             >
-              Skip
+              SKIP
             </button>
             <AutoCompleteSearch />
           </div>
