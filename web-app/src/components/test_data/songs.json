@@ -1,0 +1,181 @@
+{"data": {
+    "songs": [
+      {
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "trackNumber": 11,
+        "year": 1975,
+        "genre": "Rock",
+        "albumArtist": "Queen",
+        "composer": "Freddie Mercury",
+        "lyrist": "Freddie Mercury",
+        "publisher": "EMI Records",
+        "uuid": "2156retyudg",
+        "stems": [
+          {
+            "stemId": "1",
+            "name": "Drums"
+          },
+          {
+            "stemId": "2",
+            "name": "Bass"
+          },
+          {
+            "stemId": "3",
+            "name": "Synth1"
+          },
+          {
+            "stemId": "4",
+            "name": "Synth2"
+          },
+          {
+            "stemId": "5",
+            "name": "Voice Cover"
+          }
+        ]
+      },
+      {
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "album": "Led Zeppelin IV",
+        "trackNumber": 4,
+        "year": 1971,
+        "genre": "Rock",
+        "albumArtist": "Led Zeppelin",
+        "composer": "Jimmy Page, Robert Plant",
+        "lyrist": "Freddie Mercury",
+        "publisher": "EMI Records",
+        "uuid": "1980asyfiug",
+        "stems": [
+          {
+            "stemId": "1",
+            "name": "Drums"
+          },
+          {
+            "stemId": "2",
+            "name": "Bass"
+          },
+          {
+            "stemId": "3",
+            "name": "Synth1"
+          },
+          {
+            "stemId": "4",
+            "name": "Synth2"
+          },
+          {
+            "stemId": "5",
+            "name": "Voice Cover"
+          }
+        ]
+      },
+      {
+        "title": "Imagine",
+        "artist": "John Lennon",
+        "album": "Imagine",
+        "trackNumber": 1,
+        "year": 1971,
+        "genre": "Rock",
+        "albumArtist": "John Lennon",
+        "composer": "John Lennon",
+        "lyrist": "John Lennon",
+        "publisher": "Apple Records",
+        "uuid": "789aysuig",
+        "stems": [
+          {
+            "stemId": "1",
+            "name": "Drums"
+          },
+          {
+            "stemId": "2",
+            "name": "Bass"
+          },
+          {
+            "stemId": "3",
+            "name": "Synth1"
+          },
+          {
+            "stemId": "4",
+            "name": "Synth2"
+          },
+          {
+            "stemId": "5",
+            "name": "Voice Cover"
+          }
+        ]
+      },
+      {
+        "title": "Hotel California",
+        "artist": "Eagles",
+        "album": "Hotel California",
+        "trackNumber": 1,
+        "year": 1976,
+        "genre": "Rock",
+        "albumArtist": "Eagles",
+        "composer": "Don Felder, Don Henley, Glenn Frey",
+        "lyrist": "Don Henley, Glenn Frey",
+        "publisher": "Asylum Records",
+        "uuid": "798x7yuizx",
+        "stems": [
+          {
+            "stemId": "1",
+            "name": "Drums"
+          },
+          {
+            "stemId": "2",
+            "name": "Bass"
+          },
+          {
+            "stemId": "3",
+            "name": "Synth1"
+          },
+          {
+            "stemId": "4",
+            "name": "Synth2"
+          },
+          {
+            "stemId": "5",
+            "name": "Voice Cover"
+          }
+        ]
+      },
+      {
+        "title": "Like a Rolling Stone",
+        "artist": "Bob Dylan",
+        "album": "Highway 61 Revisited",
+        "trackNumber": 1,
+        "year": 1965,
+        "genre": "Rock",
+        "albumArtist": "Bob Dylan",
+        "composer": "Bob Dylan",
+        "lyrist": "Bob Dylan",
+        "publisher": "Columbia Records",
+        "uuid": "hjkfio87yf",
+        "stems": [
+          {
+            "stemId": "1",
+            "name": "Drums"
+          },
+          {
+            "stemId": "2",
+            "name": "Bass"
+          },
+          {
+            "stemId": "3",
+            "name": "Synth1"
+          },
+          {
+            "stemId": "4",
+            "name": "Synth2"
+          },
+          {
+            "stemId": "5",
+            "name": "Voice Cover"
+          }
+        ]
+      }
+    ],
+    "songOfTheDay": "hjkfio87yf"
+  }
+}
