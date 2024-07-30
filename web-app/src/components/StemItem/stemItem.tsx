@@ -19,7 +19,7 @@ const StemItem: React.FC<Props> = ({ stemVal, active, paused, setPaused }) => {
       startTimeRef.current = Date.now() - elapsedTimeRef.current;
       interval = setInterval(() => {
         const timeDiff = Date.now() - startTimeRef.current;
-        newProgress = Math.min((timeDiff / 4_000) * 100, 100);
+        newProgress = Math.min((timeDiff / 15_000) * 100, 100);
         setProgress(newProgress);
       }, 100);
     } else if (active && paused) {
