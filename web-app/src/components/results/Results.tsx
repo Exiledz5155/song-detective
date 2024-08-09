@@ -30,7 +30,7 @@ const Results: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="flex justify-center items-center">
       {resultState === "correct" ? <SuccessResult /> : <WrongGuessResult />}
     </div>
   );
