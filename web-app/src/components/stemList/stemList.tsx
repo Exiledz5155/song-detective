@@ -38,58 +38,57 @@ const StemList: React.FC = () => {
 
   return (
     <div>
-      <div>
-        <div className="mb-6 flex justify-center align-middle">
-          <LightBulbIcon className="h-6 md:ml-4 text-gray-400 mr-2" />
-          <h1 className="text-gray-400 font-bold text-m md:text-m">
-            GUESS THE SONG
-          </h1>
+      <div className="flex justify-center items-center gap-2 mb-6">
+        <LightBulbIcon className="h-4 text-yellow-300" />
+        <div className="text-gray-300 text-xs">
+          Click on a stem to play it. Click on the play button to start the
+          playback. Click on the skip button to skip to the next stem.
         </div>
-        {stems.map((stem, index) => (
-          <div key={stem.stemId} className="mb-8">
-            <div>
-              <div className="flex justify-start gap-2">
-                {stem.name}
-                {index === activeIndex && isPlaying && (
-                  <div className="flex flex-col justify-center">
-                    <SpeakerWaveIcon className="h-3 text-gray-200 align-middle" />
-                  </div>
-                )}
-              </div>
-            </div>
-            <div>
-              <StemItem
-                stemVal={stem.name}
-                active={index === activeIndex}
-                paused={!isPlaying}
-                setPaused={() => setIsPlaying(!isPlaying)}
-              />
-            </div>
-          </div>
-        ))}
-        <div>
-          <div className="flex justify-center mb-4">
-            <button
-              onClick={handlePlay}
-              className="bg-transparent text-gray-300 border-2 border-gray-400 px-4 py-2 rounded mr-2 flex items-center"
-            >
-              {!isPlaying ? (
-                <PlayIcon className="h-5" />
-              ) : (
-                <PauseIcon className="h-5" />
+      </div>
+      {stems.map((stem, index) => (
+        <div key={stem.stemId} className="mb-8">
+          <div>
+            <div className="flex justify-start gap-2">
+              {stem.name}
+              {index === activeIndex && isPlaying && (
+                <div className="flex flex-col justify-center">
+                  <SpeakerWaveIcon className="h-3 text-gray-200 align-middle" />
+                </div>
               )}
-            </button>
+            </div>
           </div>
-          <div className="flex justify-center mb-4">
-            <button
-              className="bg-transparent text-yellow-300 border-2 border-yellow-400 px-4 py-2 rounded mr-2 flex items-center"
-              style={{ height: "40px" }}
-              onClick={handleSkip}
-            >
-              SKIP
-            </button>
-            <AutoCompleteSearch />
+          <div>
+            <StemItem
+              stemVal={stem.name}
+              active={index === activeIndex}
+              paused={!isPlaying}
+              setPaused={() => setIsPlaying(!isPlaying)}
+            />
           </div>
+        </div>
+      ))}
+      <div>
+        <div className="flex justify-center mb-4">
+          <button
+            onClick={handlePlay}
+            className="bg-transparent text-gray-300 border-2 border-gray-400 px-4 py-2 rounded mr-2 flex items-center"
+          >
+            {!isPlaying ? (
+              <PlayIcon className="h-5" />
+            ) : (
+              <PauseIcon className="h-5" />
+            )}
+          </button>
+        </div>
+        <div className="flex justify-center mb-4">
+          <button
+            className="bg-transparent text-yellow-300 border-2 border-yellow-400 px-4 py-2 rounded mr-2 flex items-center"
+            style={{ height: "40px" }}
+            onClick={handleSkip}
+          >
+            SKIP
+          </button>
+          <AutoCompleteSearch />
         </div>
       </div>
     </div>

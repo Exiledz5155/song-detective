@@ -5,15 +5,17 @@ import { Stem } from "../lib/definitions";
 import { mainFont } from "@/components/fonts";
 import SongProvider from "@/components/providers/SongProvider";
 import Results from "@/components/results";
+import AppFooter from "@/components/appFooter";
 
 const App = () => (
-  <div className={`${mainFont.className}`}>
+  <div className={`${mainFont.className} min-h-screen flex flex-col`}>
     <SongProvider>
       <TopNavBar />
-      <div className="container mx-auto max-w-screen-sm">
+      <div className="flex-grow container mx-auto p-4 md:p-8">
         <StemList />
         <Results />
       </div>
+      <AppFooter />
     </SongProvider>
   </div>
 );

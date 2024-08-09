@@ -17,9 +17,9 @@ const TopNavBar = () => (
         <ChartBarIcon className="h-5 text-gray-400 hover:text-white cursor-pointer" />
       </div>
       <div className="text-mainTextColor font-bold text-custom-size">
-        <Link href="/">SONG DETECTIVE</Link>
+        <Link href="/">Meowify</Link>
       </div>
-      <div className="flex items-center">
+      <div>
         <UserIcon className="h-5 text-gray-400 hover:text-white cursor-pointer mr-4" />
       </div>
     </div>
