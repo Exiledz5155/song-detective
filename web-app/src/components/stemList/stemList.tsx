@@ -71,7 +71,7 @@ const StemList: React.FC = () => {
         <div className="flex justify-center mb-4">
           <button
             onClick={handlePlay}
-            className="bg-transparent text-gray-300 border-2 border-gray-400 px-4 py-2 rounded mr-2 flex items-center"
+            className="bg-transparent text-gray-300 border-2 border-gray-400 px-4 py-2 rounded flex items-center"
           >
             {!isPlaying ? (
               <PlayIcon className="h-5" />
