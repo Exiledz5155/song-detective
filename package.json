@@ -1,0 +1,5 @@
+{
+    "scripts": {
+      "preinstall": "if [ \"$PWD\" = \"$(git rev-parse --show-toplevel)\" ]; then echo 'Please navigate to the web-app directory before running yarn.' && exit 1; fi"
+    }
+  }

@@ -21,6 +21,24 @@ const AutoCompleteSearch = () => {
   const [showSongList, setShowSongList] = React.useState(false);
   const [activeSong, setActiveSong] = React.useState(0);
 
+  const wrapperRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        wrapperRef.current &&
+        !wrapperRef.current.contains(event.target as Node)
+      ) {
+        setShowSongList(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [wrapperRef]);
+
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (activeSong) {
       return;
@@ -111,7 +129,7 @@ const AutoCompleteSearch = () => {
   }
 
   return (
-    <div className="flex justify-center mb-4">
+    <div ref={wrapperRef} className="flex justify-center mb-4">
       <form onSubmit={onSubmit} className="flex items-center">
         <div className="relative">
           <input

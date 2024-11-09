@@ -71,8 +71,6 @@ body {
   padding: 0.5rem;
 }
 
-
-
 .text-custom-size {
   font-size: 2rem;
 }
@@ -92,4 +90,12 @@ body {
   100% {
     background-position: -200% 0;
   }
+}
+
+.app-footer {
+  background-color: #1f2937; /* bg-gray-1000 */
+  color: #9ca3af; /* text-gray-400 */
+  text-align: center;
+  font-size: 0.875rem; /* text-sm */
+  padding: 1rem; /* p-4 */
 }
